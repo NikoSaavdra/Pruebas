@@ -9,8 +9,8 @@ import es.santander.ascender.prueba.PruebaArrays;
 
 public class ArrayCreadoTest {
 
+    
     @Test
-
     public void testCrearArray(){
 
         PruebaArrays Prueba = new PruebaArrays(); 
@@ -26,9 +26,51 @@ public class ArrayCreadoTest {
         assertEquals(i, resultado[i]);
         
         
-    }
+    } }
+
+    @Test
+    public void testSumarELementos(){
+
+        PruebaArrays Prueba = new PruebaArrays(); 
+        
+
+       int acum = Prueba.sumarElementos(); // Tengo el acumulado del prog.principal
+       int[] arregloUno = Prueba.obtenerArreglo();
+       
+       int total = 0;
+       
+       
+       for (int i = 0 ; i < arregloUno.length; i++) {
+        
+              total += arregloUno[i];
+              
+        } 
+       
+        assertEquals(5, arregloUno.length);
+        assertEquals(acum, total);
 
     }
+
+    
+    @Test
+    public void testConocerContenido(){
+
+        PruebaArrays Prueba = new PruebaArrays();
+
+        int[] nuevo = Prueba.enviarArray();
+        int resultadoContenido = Prueba.conocerContenido();
+
+        assertEquals(resultadoContenido, nuevo[3]);
+
+    }
+
+
+
+
+
+
+
+
 
 
 }
