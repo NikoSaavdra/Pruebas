@@ -17,7 +17,7 @@ public class IngresoElemento {
 
         int[] array = new int[cantidad];
 
-        System.out.println("Ingrese los " + cantidad + "valores");
+        System.out.println("Ingrese los " + cantidad + " valores");
         
       
 

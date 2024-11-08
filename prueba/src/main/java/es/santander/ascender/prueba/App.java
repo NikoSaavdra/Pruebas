@@ -14,7 +14,7 @@ public class App {
         // Imprimimos el arreglo para verificar que los valores fueron ingresados correctamente
         System.out.println("\nLos valores ingresados en el arreglo son:");
         for (int i = 0; i < arreglo.length; i++) {
-            System.out.println("Elemento " + (i + 1) + ": " + arreglo[i]);
+            System.out.print("["  +arreglo[i]+ "],");
         }
     }
 }
